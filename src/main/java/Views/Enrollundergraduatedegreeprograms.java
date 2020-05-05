@@ -50,6 +50,7 @@ public class Enrollundergraduatedegreeprograms extends javax.swing.JFrame {
         txtcoursenameU = new javax.swing.JTextField();
         CancelButton1U = new javax.swing.JButton();
         AddButton1U = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -83,8 +84,6 @@ public class Enrollundergraduatedegreeprograms extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Enter degree name :");
 
-        txtbirthdayU.setText("DD-Month-YYYY");
-
         MalejRadioButton1U.setForeground(new java.awt.Color(0, 0, 0));
         MalejRadioButton1U.setText("Male");
 
@@ -112,6 +111,10 @@ public class Enrollundergraduatedegreeprograms extends javax.swing.JFrame {
 
         AddButton1U.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         AddButton1U.setText("Add");
+
+        jLabel10.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel10.setText("YYYY/MM/DD");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -160,7 +163,8 @@ public class Enrollundergraduatedegreeprograms extends javax.swing.JFrame {
                                 .addComponent(FemalejRadioButton2U))
                             .addComponent(txtbirthdayU, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtphoneU, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtaddressU, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txtaddressU, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -172,7 +176,9 @@ public class Enrollundergraduatedegreeprograms extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(txtnameU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(txtbirthdayU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -271,6 +277,7 @@ public class Enrollundergraduatedegreeprograms extends javax.swing.JFrame {
     private javax.swing.JRadioButton FemalejRadioButton2U;
     private javax.swing.JRadioButton MalejRadioButton1U;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
