@@ -5,7 +5,7 @@
  */
 package Modles;
 
-import DatabaseLayer.Myconnection;
+import DatabaseLayer.DbConnection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -22,7 +22,7 @@ public class Notification
     public static int countData(String tableName)
     {
         int total = 0;
-        Connection con = Myconnection.getConnection();
+        Connection con = DbConnection.getConnection();
         Statement st;
         try {
             st = con.createStatement();

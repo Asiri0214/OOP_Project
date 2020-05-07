@@ -6,6 +6,7 @@
 package Views;
 
 
+import DatabaseLayer.DbConnection;
 import Modles.Notification;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -269,8 +270,7 @@ public class EnrollCertificateprograms extends javax.swing.JFrame {
                
                
              String quary ="insert into CertificateStudents values('"+ID+"','"+Name+"','"+Birthday+"','"+Sex+"','"+Phone+"','"+Address+"','"+Course+"')";
-             Class.forName("com.mysql.cj.jdbc.Driver");
-             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student", "root", "1234");
+             Connection con = DbConnection.getConnection();
              Statement stmt = con.createStatement();
              int count = stmt.executeUpdate(quary);
              

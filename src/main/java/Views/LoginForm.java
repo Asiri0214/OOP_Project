@@ -5,7 +5,7 @@
  */
 package Views;
 
-import DatabaseLayer.Myconnection;
+import DatabaseLayer.DbConnection;
 import Modles.Notification;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -177,7 +177,7 @@ public class LoginForm extends javax.swing.JFrame {
            }
            else 
            {
-               Connection con = Myconnection.getConnection();
+               Connection con = DbConnection.getConnection();
                PreparedStatement ps;
                
                  try {

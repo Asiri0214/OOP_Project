@@ -5,7 +5,7 @@
  */
 package Modles;
 
-import DatabaseLayer.Myconnection;
+import DatabaseLayer.DbConnection;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -24,7 +24,7 @@ public class Managecertificatestudent
     public void fillstudentCtable(JTable table, String valuetosearch)
     {
         
-        Connection con =Myconnection.getConnection();
+        Connection con = DbConnection.getConnection();
         PreparedStatement ps;
         try {
             ps=con.prepareStatement("SELECT * FROM CertificateStudents WHERE CONCAT('Name','PhoneNo','Address') LIKE ?;");

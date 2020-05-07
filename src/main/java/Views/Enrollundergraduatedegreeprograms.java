@@ -5,6 +5,7 @@
  */
 package Views;
 
+import DatabaseLayer.DbConnection;
 import javax.swing.ButtonGroup;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -239,8 +240,7 @@ public class Enrollundergraduatedegreeprograms extends javax.swing.JFrame {
             String Sex = txtsexU.getText();
             
              String quary ="insert into UndergraduateStudents values('"+ID+"','"+Name+"','"+Birthday+"','"+Sex+"','"+Phone+"','"+Address+"','"+Course+"')";
-             Class.forName("com.mysql.cj.jdbc.Driver");
-             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student", "root", "1234");
+             Connection con = DbConnection.getConnection();
              Statement stmt = con.createStatement();
              int count = stmt.executeUpdate(quary);
              

@@ -5,6 +5,7 @@
  */
 package Views;
 
+import DatabaseLayer.DbConnection;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -643,8 +644,7 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/New_Database", "root", "ng1996kt");
+            Connection con = DbConnection.getConnection();
 
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from undergraduate");
@@ -694,8 +694,7 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
 
             String mainquery = "insert into undergraduate values (" + pno + ",'" + pname + "','" + sdate + "'," + duration + "," + price + ")";
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/New_Database", "root", "ng1996kt");
+            Connection con = DbConnection.getConnection();
 
             Statement stmt = con.createStatement();
             stmt.executeUpdate(mainquery);
@@ -726,8 +725,7 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
 
             String quary = "update undergraduate set pname ='" + n + "'where pno =" + i + "";
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/New_Database", "root", "ng1996kt");
+            Connection con = DbConnection.getConnection();
 
             Statement stmt = con.createStatement();
             stmt.executeUpdate(quary);
@@ -753,8 +751,7 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
 
             String quary = "update undergraduate set sdate ='" + n + "'where pno =" + i + "";
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/New_Database", "root", "ng1996kt");
+            Connection con = DbConnection.getConnection();
 
             Statement stmt = con.createStatement();
             stmt.executeUpdate(quary);
@@ -780,8 +777,7 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
 
             //String quary ="update undergraduate set duration = "+duration+"where pno ="+pno+"";
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/New_Database", "root", "ng1996kt");
+            Connection con = DbConnection.getConnection();
 
             Statement stmt = con.createStatement();
             int count = stmt.executeUpdate("update undergraduate set duration = '"+duration+"'where pno ="+pno+"");
@@ -807,8 +803,7 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
 
             String quary = "update undergraduate set price ='" + n + "'where pno =" + i + "";
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/New_Database", "root", "ng1996kt");
+            Connection con = DbConnection.getConnection();
 
             Statement stmt = con.createStatement();
             int count = stmt.executeUpdate(quary);
@@ -832,8 +827,7 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
 
             String query = "delete from undergraduate where pno=" + delt + "";
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/New_Database", "root", "ng1996kt");
+            Connection con = DbConnection.getConnection();
 
             Statement stmt = con.createStatement();
             stmt.executeUpdate(query);
