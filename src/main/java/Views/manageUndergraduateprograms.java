@@ -59,6 +59,7 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
         dr = new javax.swing.JTextField();
         pr = new javax.swing.JTextField();
         addButton = new javax.swing.JButton();
+        close5 = new javax.swing.JButton();
         updateLayer = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -76,16 +77,19 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
         updateDate = new javax.swing.JButton();
         updateDuration = new javax.swing.JButton();
         updatePrice = new javax.swing.JButton();
+        close6 = new javax.swing.JButton();
         viewLayer = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        close7 = new javax.swing.JButton();
         deleteLayer = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         deletep = new javax.swing.JTextField();
         dlt = new javax.swing.JButton();
+        close8 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -249,6 +253,13 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
             }
         });
 
+        close5.setText("Close");
+        close5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                close5ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout addLayerLayout = new javax.swing.GroupLayout(addLayer);
         addLayer.setLayout(addLayerLayout);
         addLayerLayout.setHorizontalGroup(
@@ -276,7 +287,8 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
                                     .addComponent(sd, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(pnm, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(pid, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(pr))))))
+                                    .addComponent(pr)))
+                            .addComponent(close5))))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         addLayerLayout.setVerticalGroup(
@@ -304,8 +316,10 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
                 .addGroup(addLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(pr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 231, Short.MAX_VALUE)
+                .addGap(71, 71, 71)
                 .addComponent(addButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
+                .addComponent(close5)
                 .addContainerGap())
         );
 
@@ -362,6 +376,8 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
             }
         });
 
+        close6.setText("Close");
+
         javax.swing.GroupLayout updateLayerLayout = new javax.swing.GroupLayout(updateLayer);
         updateLayer.setLayout(updateLayerLayout);
         updateLayerLayout.setHorizontalGroup(
@@ -397,8 +413,9 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
                                             .addComponent(Updatename)
                                             .addComponent(updateDate)
                                             .addComponent(updateDuration)
-                                            .addComponent(updatePrice))))))))
-                .addContainerGap(39, Short.MAX_VALUE))
+                                            .addComponent(updatePrice)
+                                            .addComponent(close6))))))))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         updateLayerLayout.setVerticalGroup(
             updateLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -432,7 +449,9 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(uprice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(updatePrice))
-                .addGap(86, 86, 86))
+                .addGap(51, 51, 51)
+                .addComponent(close6)
+                .addContainerGap())
         );
 
         midLayer.add(updateLayer, "card3");
@@ -452,6 +471,13 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        close7.setText("Close");
+        close7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                close7ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout viewLayerLayout = new javax.swing.GroupLayout(viewLayer);
         viewLayer.setLayout(viewLayerLayout);
         viewLayerLayout.setHorizontalGroup(
@@ -464,6 +490,9 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
                         .addGap(0, 63, Short.MAX_VALUE))
                     .addComponent(jScrollPane1))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, viewLayerLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(close7))
         );
         viewLayerLayout.setVerticalGroup(
             viewLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -471,8 +500,9 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 466, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addComponent(close7))
         );
 
         midLayer.add(viewLayer, "card4");
@@ -493,6 +523,13 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
             }
         });
 
+        close8.setText("Close");
+        close8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                close8ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout deleteLayerLayout = new javax.swing.GroupLayout(deleteLayer);
         deleteLayer.setLayout(deleteLayerLayout);
         deleteLayerLayout.setHorizontalGroup(
@@ -509,6 +546,10 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(dlt)))
                 .addContainerGap(69, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, deleteLayerLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(close8)
+                .addGap(28, 28, 28))
         );
         deleteLayerLayout.setVerticalGroup(
             deleteLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -522,7 +563,9 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
                     .addComponent(jLabel21)
                     .addComponent(deletep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(dlt))
-                .addContainerGap(378, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 343, Short.MAX_VALUE)
+                .addComponent(close8)
+                .addContainerGap())
         );
 
         midLayer.add(deleteLayer, "card5");
@@ -800,6 +843,21 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
         deletep.setText("");
     }//GEN-LAST:event_dltActionPerformed
 
+    private void close5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_close5ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_close5ActionPerformed
+
+    private void close7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_close7ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_close7ActionPerformed
+
+    private void close8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_close8ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_close8ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -847,6 +905,10 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
     private javax.swing.JPanel add;
     private javax.swing.JButton addButton;
     private javax.swing.JPanel addLayer;
+    private javax.swing.JButton close5;
+    private javax.swing.JButton close6;
+    private javax.swing.JButton close7;
+    private javax.swing.JButton close8;
     private javax.swing.JPanel delete;
     private javax.swing.JPanel deleteLayer;
     private javax.swing.JTextField deletep;

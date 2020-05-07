@@ -59,6 +59,7 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
         du1 = new javax.swing.JTextField();
         price1 = new javax.swing.JTextField();
         addButt = new javax.swing.JButton();
+        close1 = new javax.swing.JButton();
         updateL = new javax.swing.JPanel();
         progl2 = new javax.swing.JLabel();
         progl3 = new javax.swing.JLabel();
@@ -76,16 +77,19 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
         jButt2 = new javax.swing.JButton();
         jButt3 = new javax.swing.JButton();
         jButt4 = new javax.swing.JButton();
+        close2 = new javax.swing.JButton();
         viewL = new javax.swing.JPanel();
         vLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
+        close3 = new javax.swing.JButton();
         deleteL = new javax.swing.JPanel();
         prol6 = new javax.swing.JLabel();
         prog13 = new javax.swing.JLabel();
         prog14 = new javax.swing.JLabel();
         deletepr = new javax.swing.JTextField();
         deleteBut = new javax.swing.JButton();
+        close4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -244,6 +248,13 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
             }
         });
 
+        close1.setText("Close");
+        close1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                close1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout addLLayout = new javax.swing.GroupLayout(addL);
         addL.setLayout(addLLayout);
         addLLayout.setHorizontalGroup(
@@ -253,7 +264,6 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
                 .addGroup(addLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(progl1, javax.swing.GroupLayout.PREFERRED_SIZE, 521, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(addLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(addButt)
                         .addGroup(addLLayout.createSequentialGroup()
                             .addGroup(addLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(prog1)
@@ -267,7 +277,9 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
                                 .addComponent(price1, javax.swing.GroupLayout.DEFAULT_SIZE, 351, Short.MAX_VALUE)
                                 .addComponent(pno1)
                                 .addComponent(pname1)
-                                .addComponent(sdate1)))))
+                                .addComponent(sdate1)))
+                        .addComponent(addButt)
+                        .addComponent(close1)))
                 .addContainerGap(32, Short.MAX_VALUE))
         );
         addLLayout.setVerticalGroup(
@@ -299,9 +311,11 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
                 .addGroup(addLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(price1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(prog5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
+                .addGap(36, 36, 36)
                 .addComponent(addButt)
-                .addGap(26, 26, 26))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 101, Short.MAX_VALUE)
+                .addComponent(close1)
+                .addGap(22, 22, 22))
         );
 
         mid.add(addL, "card2");
@@ -351,6 +365,13 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
             }
         });
 
+        close2.setText("Close");
+        close2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                close2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout updateLLayout = new javax.swing.GroupLayout(updateL);
         updateL.setLayout(updateLLayout);
         updateLLayout.setHorizontalGroup(
@@ -382,7 +403,8 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
                                     .addComponent(jButt1)
                                     .addComponent(jButt2)
                                     .addComponent(jButt3)
-                                    .addComponent(jButt4))))))
+                                    .addComponent(jButt4)
+                                    .addComponent(close2, javax.swing.GroupLayout.Alignment.TRAILING))))))
                 .addContainerGap(31, Short.MAX_VALUE))
         );
         updateLLayout.setVerticalGroup(
@@ -416,7 +438,8 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
                     .addComponent(prog12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(upri1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButt4))
-                .addContainerGap(190, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
+                .addComponent(close2))
         );
 
         mid.add(updateL, "card3");
@@ -436,6 +459,13 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable2);
 
+        close3.setText("Close");
+        close3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                close3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout viewLLayout = new javax.swing.GroupLayout(viewL);
         viewL.setLayout(viewLLayout);
         viewLLayout.setHorizontalGroup(
@@ -444,6 +474,10 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addComponent(vLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 506, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(47, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, viewLLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(close3)
+                .addContainerGap())
             .addGroup(viewLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(viewLLayout.createSequentialGroup()
                     .addContainerGap()
@@ -454,7 +488,8 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
             viewLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(viewLLayout.createSequentialGroup()
                 .addComponent(vLabel7)
-                .addGap(0, 530, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 501, Short.MAX_VALUE)
+                .addComponent(close3))
             .addGroup(viewLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(viewLLayout.createSequentialGroup()
                     .addGap(50, 50, 50)
@@ -480,21 +515,30 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
             }
         });
 
+        close4.setText("Close");
+        close4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                close4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout deleteLLayout = new javax.swing.GroupLayout(deleteL);
         deleteL.setLayout(deleteLLayout);
         deleteLLayout.setHorizontalGroup(
             deleteLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(deleteLLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addGroup(deleteLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(deleteLLayout.createSequentialGroup()
-                        .addComponent(prog14)
-                        .addGap(46, 46, 46)
-                        .addComponent(deletepr, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(deleteBut))
-                    .addComponent(prog13, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(prol6, javax.swing.GroupLayout.PREFERRED_SIZE, 521, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(deleteLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(close4)
+                    .addGroup(deleteLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(deleteLLayout.createSequentialGroup()
+                            .addComponent(prog14)
+                            .addGap(46, 46, 46)
+                            .addComponent(deletepr, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(deleteBut))
+                        .addComponent(prog13, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(prol6, javax.swing.GroupLayout.PREFERRED_SIZE, 521, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(27, Short.MAX_VALUE))
         );
         deleteLLayout.setVerticalGroup(
@@ -509,7 +553,9 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
                     .addComponent(prog14)
                     .addComponent(deletepr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(deleteBut))
-                .addContainerGap(416, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 367, Short.MAX_VALUE)
+                .addComponent(close4)
+                .addGap(20, 20, 20))
         );
 
         mid.add(deleteL, "card5");
@@ -768,6 +814,26 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
         upri1.setText("");
     }//GEN-LAST:event_jButt4ActionPerformed
 
+    private void close1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_close1ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_close1ActionPerformed
+
+    private void close2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_close2ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_close2ActionPerformed
+
+    private void close3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_close3ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_close3ActionPerformed
+
+    private void close4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_close4ActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_close4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -810,6 +876,10 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
     private javax.swing.JButton addButt;
     private javax.swing.JPanel addL;
     private javax.swing.JPanel addp;
+    private javax.swing.JButton close1;
+    private javax.swing.JButton close2;
+    private javax.swing.JButton close3;
+    private javax.swing.JButton close4;
     private javax.swing.JButton deleteBut;
     private javax.swing.JPanel deleteL;
     private javax.swing.JTextField deletepr;
