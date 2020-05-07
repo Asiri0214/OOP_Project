@@ -284,10 +284,14 @@
                                       <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="du1" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="price1" alignment="0" pref="351" max="32767" attributes="0"/>
+                                          <Component id="price1" alignment="0" max="32767" attributes="0"/>
                                           <Component id="pno1" max="32767" attributes="0"/>
                                           <Component id="pname1" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="sdate1" alignment="0" max="32767" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="sdate1" min="-2" pref="251" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="dformat1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                   </Group>
                                   <Component id="addButt" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -323,6 +327,7 @@
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="prog3" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="sdate1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dformat1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -402,6 +407,11 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="close1ActionPerformed"/>
                   </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="dformat1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="YYYY-MM-DD"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>

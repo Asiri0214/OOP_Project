@@ -60,6 +60,7 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
         pr = new javax.swing.JTextField();
         addButton = new javax.swing.JButton();
         close5 = new javax.swing.JButton();
+        formatd2 = new javax.swing.JLabel();
         updateLayer = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -260,6 +261,8 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
             }
         });
 
+        formatd2.setText("YYYY-MM-DD");
+
         javax.swing.GroupLayout addLayerLayout = new javax.swing.GroupLayout(addLayer);
         addLayer.setLayout(addLayerLayout);
         addLayerLayout.setHorizontalGroup(
@@ -284,10 +287,13 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
                                 .addGap(55, 55, 55)
                                 .addGroup(addLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(dr, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
-                                    .addComponent(sd, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(pnm, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(pid, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(pr)))
+                                    .addComponent(pr)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, addLayerLayout.createSequentialGroup()
+                                        .addComponent(sd, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(formatd2))))
                             .addComponent(close5))))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
@@ -307,7 +313,8 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(addLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(sd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(sd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(formatd2))
                 .addGap(18, 18, 18)
                 .addGroup(addLayerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
@@ -914,6 +921,7 @@ public class manageUndergraduateprograms extends javax.swing.JFrame {
     private javax.swing.JTextField deletep;
     private javax.swing.JButton dlt;
     private javax.swing.JTextField dr;
+    private javax.swing.JLabel formatd2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

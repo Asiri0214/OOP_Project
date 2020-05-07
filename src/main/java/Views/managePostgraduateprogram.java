@@ -60,6 +60,7 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
         price1 = new javax.swing.JTextField();
         addButt = new javax.swing.JButton();
         close1 = new javax.swing.JButton();
+        dformat1 = new javax.swing.JLabel();
         updateL = new javax.swing.JPanel();
         progl2 = new javax.swing.JLabel();
         progl3 = new javax.swing.JLabel();
@@ -255,6 +256,8 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
             }
         });
 
+        dformat1.setText("YYYY-MM-DD");
+
         javax.swing.GroupLayout addLLayout = new javax.swing.GroupLayout(addL);
         addL.setLayout(addLLayout);
         addLLayout.setHorizontalGroup(
@@ -274,10 +277,13 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
                             .addGap(62, 62, 62)
                             .addGroup(addLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(du1)
-                                .addComponent(price1, javax.swing.GroupLayout.DEFAULT_SIZE, 351, Short.MAX_VALUE)
+                                .addComponent(price1)
                                 .addComponent(pno1)
                                 .addComponent(pname1)
-                                .addComponent(sdate1)))
+                                .addGroup(addLLayout.createSequentialGroup()
+                                    .addComponent(sdate1, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(dformat1))))
                         .addComponent(addButt)
                         .addComponent(close1)))
                 .addContainerGap(32, Short.MAX_VALUE))
@@ -302,7 +308,8 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addGroup(addLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(prog3)
-                    .addComponent(sdate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(sdate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dformat1))
                 .addGap(27, 27, 27)
                 .addGroup(addLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(prog4)
@@ -883,6 +890,7 @@ public class managePostgraduateprogram extends javax.swing.JFrame {
     private javax.swing.JButton deleteBut;
     private javax.swing.JPanel deleteL;
     private javax.swing.JTextField deletepr;
+    private javax.swing.JLabel dformat1;
     private javax.swing.JPanel dp;
     private javax.swing.JTextField du1;
     private javax.swing.JButton jButt1;

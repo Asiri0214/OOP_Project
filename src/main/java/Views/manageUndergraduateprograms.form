@@ -290,10 +290,14 @@
                                           <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                               <Component id="dr" alignment="0" pref="368" max="32767" attributes="0"/>
-                                              <Component id="sd" alignment="0" max="32767" attributes="0"/>
                                               <Component id="pnm" alignment="0" max="32767" attributes="0"/>
                                               <Component id="pid" alignment="0" max="32767" attributes="0"/>
                                               <Component id="pr" max="32767" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="sd" min="-2" pref="259" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="formatd2" min="-2" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
                                       </Group>
                                       <Component id="close5" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -323,6 +327,7 @@
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="sd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="formatd2" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -405,6 +410,11 @@
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="close5ActionPerformed"/>
                   </Events>
+                </Component>
+                <Component class="javax.swing.JLabel" name="formatd2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="YYYY-MM-DD"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>

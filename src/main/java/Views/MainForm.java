@@ -111,7 +111,7 @@ public class MainForm extends javax.swing.JFrame {
         });
         jMenu4.add(jMenuItem5);
 
-        jMenuItem6.setText("Manage Enroll  post graduate degree  programs");
+        jMenuItem6.setText("Manage post graduate degree  programs");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem6ActionPerformed(evt);
