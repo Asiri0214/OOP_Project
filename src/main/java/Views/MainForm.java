@@ -5,6 +5,8 @@
  */
 package Views;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author TITANIUM
@@ -102,6 +104,11 @@ public class MainForm extends javax.swing.JFrame {
         jMenu4.setText("Manage Students");
 
         jMenuItem4.setText("Manage Certificate  programs");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem4);
 
         jMenuItem5.setText("Manage  undergraduate degree  programs");
@@ -136,6 +143,11 @@ public class MainForm extends javax.swing.JFrame {
         jMenu6.add(jMenuItem10);
 
         jMenuItem11.setText("Enrolled students notificatins");
+        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem11ActionPerformed(evt);
+            }
+        });
         jMenu6.add(jMenuItem11);
 
         jMenuBar1.add(jMenu6);
@@ -166,6 +178,7 @@ public class MainForm extends javax.swing.JFrame {
                          AddECP.setVisible(true);
                          AddECP.pack();
                          AddECP.setLocationRelativeTo(null); 
+                         AddECP.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
@@ -174,6 +187,7 @@ public class MainForm extends javax.swing.JFrame {
                          AddEUDP.setVisible(true);
                          AddEUDP.pack();
                          AddEUDP.setLocationRelativeTo(null);
+                         AddEUDP.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
@@ -182,7 +196,29 @@ public class MainForm extends javax.swing.JFrame {
                          AddPGDP.setVisible(true);
                          AddPGDP.pack();
                          AddPGDP.setLocationRelativeTo(null);
+                         AddPGDP.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        // TODO add your handling code here:
+                         ESnotificatins AddESN = new ESnotificatins();
+                         AddESN.setVisible(true);
+                         AddESN.pack();
+                         AddESN.setLocationRelativeTo(null);
+                         AddESN.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                         
+                         
+                         
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+                         ManageCertificatestudeny mcss = new ManageCertificatestudeny();
+                         mcss.setVisible(true);
+                         mcss.pack();
+                         mcss.setLocationRelativeTo(null);
+                         mcss.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments

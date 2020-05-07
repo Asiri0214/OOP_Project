@@ -6,6 +6,7 @@
 package Views;
 
 import DatabaseLayer.Myconnection;
+import Modles.Notification;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -192,6 +193,7 @@ public class LoginForm extends javax.swing.JFrame {
                          mf.pack();
                          mf.setLocationRelativeTo(null);
                          mf.setExtendedState(JFrame.MAXIMIZED_BOTH);
+                        
                          this.dispose();
                      }
                      else
