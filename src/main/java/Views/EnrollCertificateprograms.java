@@ -6,6 +6,7 @@
 package Views;
 
 
+import Modles.Notification;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -286,6 +287,8 @@ public class EnrollCertificateprograms extends javax.swing.JFrame {
         txtsexC2.setText("");
         
         JOptionPane.showMessageDialog(null, "Student Added Sucessfull");
+        
+
     }//GEN-LAST:event_AddButton1CActionPerformed
 
     private void txtaddressCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtaddressCActionPerformed
