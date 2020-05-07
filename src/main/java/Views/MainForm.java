@@ -53,7 +53,6 @@ public class MainForm extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("True Education Academy ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -119,7 +118,12 @@ public class MainForm extends javax.swing.JFrame {
         });
         jMenu4.add(jMenuItem5);
 
-        jMenuItem6.setText("Manage Enroll  post graduate degree  programs");
+        jMenuItem6.setText("Manage post graduate degree  programs");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jMenuItem6);
 
         jMenuBar1.add(jMenu4);
@@ -170,15 +174,19 @@ public class MainForm extends javax.swing.JFrame {
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
+
+        manageUndergraduateprograms AddUP = new manageUndergraduateprograms();
+        AddUP.setVisible(true);
+        AddUP.pack();
+        AddUP.setLocationRelativeTo(null);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // To ADD Enrole Certificate program
-                         EnrollCertificateprograms AddECP = new EnrollCertificateprograms();
-                         AddECP.setVisible(true);
-                         AddECP.pack();
-                         AddECP.setLocationRelativeTo(null); 
-                         AddECP.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        EnrollCertificateprograms AddECP = new EnrollCertificateprograms();
+        AddECP.setVisible(true);
+        AddECP.pack();
+        AddECP.setLocationRelativeTo(null);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
@@ -192,12 +200,18 @@ public class MainForm extends javax.swing.JFrame {
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add post graduate student:
-                         Enrollpostgraduatedegreeprograms AddPGDP = new Enrollpostgraduatedegreeprograms();
-                         AddPGDP.setVisible(true);
-                         AddPGDP.pack();
-                         AddPGDP.setLocationRelativeTo(null);
-                         AddPGDP.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        Enrollpostgraduatedegreeprograms AddPGDP = new Enrollpostgraduatedegreeprograms();
+        AddPGDP.setVisible(true);
+        AddPGDP.pack();
+        AddPGDP.setLocationRelativeTo(null);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        managePostgraduateprogram AddPMPP = new managePostgraduateprogram();
+        AddPMPP.setVisible(true);
+        AddPMPP.pack();
+        AddPMPP.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
         // TODO add your handling code here:
